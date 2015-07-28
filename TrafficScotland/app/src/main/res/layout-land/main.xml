@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/black">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Spinner
+        android:id="@+id/road_work_spinner"
+        android:layout_width="137dp"
+        android:layout_height="49dp" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:text="Refresh" />
+    <TextView
+        style="@style/DateFont"
+        android:id="@+id/txtSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="CURRENT DATE" />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Date"
+         />
+     <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All"
+         />
+
+</LinearLayout>
+<!-- <RelativeLayout -->
+<!--     style="@style/GenericProgressBackground" -->
+<!--     android:id="@+id/loadingPanel" -->
+<!--     > -->
+<!--     <ProgressBar -->
+<!--         style="@style/GenericProgressIndicator"/> -->
+<!-- </RelativeLayout> -->
+<!-- <LinearLayout -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:orientation="horizontal" > -->
+
+<!--     <TextView -->
+<!--         style="@style/DateFont" -->
+<!--         android:id="@+id/txtSelectedDate" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content"  -->
+<!--         android:text="CURRENT DATE" /> -->
+
+<!--     <Button -->
+<!--         android:id="@+id/btnDate" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:text="Change Date" -->
+<!--          /> -->
+<!--      <Button -->
+<!--         android:id="@+id/btnViewAll" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:text="View All" -->
+<!--          /> -->
+
+<!-- </LinearLayout> -->
+
+    <ListView
+        android:id="@+id/road_event_list"
+        android:layout_width="fill_parent"
+        android:layout_height="196dp"
+        android:divider="@color/black"
+        android:dividerHeight="3dp" >
+
+</ListView>
+    <TextView
+        android:id="@+id/matric"
+             style="@style/DateFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S1228299" />
+</LinearLayout>
+
